@@ -1,0 +1,37 @@
+#container {
+    min-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(240px, 100%);
+    grid-template-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) 5vh;
+    justify-content: center;
+}
+
+header {
+    grid-row: 1/1;
+}
+article {
+    grid-row: 2/2;
+    background-color: $primary;
+}
+main {
+    grid-row: 3/3;
+}
+footer {
+    grid-row: 4/4;
+    background-color: $primaryBold;
+    color: rgb(228, 228, 228);
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 10pt;
+}
+
+.container-box {
+    width: auto;
+    height: 100%;
+    margin: 0px auto;
+    max-width: 1400px;
+    min-width: 230px;
+    padding: 0px 20px;
+}

@@ -1,0 +1,69 @@
+#pets {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.pets_adopt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        z-index: 0;
+        border-radius: 8px;
+    }
+}
+
+@for $i from 1 through 8 {
+    .pet__#{$i} {
+        margin: 10px 10px;
+        height: 300px;
+        border-radius: 8px;
+        div {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 82px;
+            position: relative;
+            z-index: 10;
+            top: -82px;
+            text-align: center;
+            color: $white;
+            padding: 8px 0px;
+            border-radius: 0px 0px 8px 8px;
+
+            button {
+                background-color: $primary;
+                border: 0.5px solid rgb(201, 201, 201);
+                border-radius: 8px;
+                font-family: "Montserrat";
+                font-size: 12px;
+                line-height: 196.19%;
+                color: $white;
+                width: 100px;
+            }
+        }
+    }
+}
+
+.btn_more {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    align-self: center;
+    background: $primary;
+    border-radius: 20px;
+    font-family: "DM Sans" sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: $white;
+    border: none;
+    padding: 5px;
+}
