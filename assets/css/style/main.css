@@ -15,8 +15,8 @@
   display: grid;
   -ms-grid-columns: minmax(240px, 100%);
       grid-template-columns: minmax(240px, 100%);
-  -ms-grid-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) 5vh;
-      grid-template-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) 5vh;
+  -ms-grid-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) minmax(240px, auto) 5vh;
+      grid-template-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) minmax(240px, auto) 5vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -38,9 +38,16 @@ main {
   grid-row: 3/3;
 }
 
-footer {
+aside {
   -ms-grid-row: 4;
   grid-row: 4/4;
+  background-color: #0071B0;
+  color: #e4e4e4;
+}
+
+footer {
+  -ms-grid-row: 5;
+  grid-row: 5/5;
   background-color: #0071B0;
   color: #e4e4e4;
   padding: 10px 0px;

@@ -4,7 +4,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(240px, 100%);
-    grid-template-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) 5vh;
+    grid-template-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) minmax(240px, auto) 5vh;
     justify-content: center;
 }
 
@@ -18,8 +18,15 @@ article {
 main {
     grid-row: 3/3;
 }
-footer {
+
+aside {
     grid-row: 4/4;
+    background-color: $primaryBold;
+    color: rgb(228, 228, 228);
+}
+
+footer {
+    grid-row: 5/5;
     background-color: $primaryBold;
     color: rgb(228, 228, 228);
     padding: 10px 0px;
