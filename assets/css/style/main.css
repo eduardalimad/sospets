@@ -2,54 +2,43 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'DM Sans', sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 #container {
   min-width: 240px;
   width: 100%;
   margin: 0 auto;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(240px, 100%);
-      grid-template-columns: minmax(240px, 100%);
-  -ms-grid-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) minmax(240px, auto) 5vh;
-      grid-template-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) minmax(240px, auto) 5vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: minmax(240px, 100%);
+  grid-template-rows: minmax(240px, 616px) minmax(240px, auto) minmax(240px, auto) minmax(240px, auto) 5vh;
+  justify-content: center;
 }
 
 header {
-  -ms-grid-row: 1;
   grid-row: 1/1;
 }
 
 article {
-  -ms-grid-row: 2;
   grid-row: 2/2;
   background-color: #1AADEC;
 }
 
 main {
-  -ms-grid-row: 3;
   grid-row: 3/3;
 }
 
 aside {
-  -ms-grid-row: 4;
   grid-row: 4/4;
   background-color: #0071B0;
-  color: #e4e4e4;
+  color: rgb(228, 228, 228);
 }
 
 footer {
-  -ms-grid-row: 5;
   grid-row: 5/5;
   background-color: #0071B0;
-  color: #e4e4e4;
+  color: rgb(228, 228, 228);
   padding: 10px 0px;
   text-align: center;
   font-size: 10pt;
@@ -65,34 +54,20 @@ footer {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 nav ul {
   width: 50%;
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-self: center;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
 }
-
 nav ul .active {
   color: #1AADEC;
 }
-
 nav ul a {
   color: #333333;
   text-decoration: none;
@@ -101,33 +76,17 @@ nav ul a {
 }
 
 header section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 header section .start__apresentation {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-
 header section .start__apresentation h1 {
   font-family: "Merriweather", serif;
   font-style: normal;
@@ -136,7 +95,6 @@ header section .start__apresentation h1 {
   line-height: 80px;
   color: #3C184E;
 }
-
 header section .start__apresentation p {
   margin: 30px 0px;
   font-family: "Rubik", sans-serif;
@@ -146,7 +104,6 @@ header section .start__apresentation p {
   line-height: 19px;
   color: #3C184E;
 }
-
 header section img {
   width: auto;
   max-width: 450px;
@@ -159,10 +116,8 @@ header section img {
   color: #ffffff;
   border: none;
   font-size: 18px;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
-
 .btn-start:hover {
   cursor: pointer;
 }
@@ -178,92 +133,59 @@ header section img {
   border: none;
   margin-left: 30px;
 }
-
 .btn-contact:hover {
   cursor: pointer;
 }
 
-article section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 40px;
+@media screen and (max-width: 806px) {
+  nav ul {
+    display: none;
+  }
+  .imgDog {
+    height: 16rem;
+  }
+  h1 {
+    font-size: 37px !important;
+    line-height: 54px !important;
+  }
+  .buttons_starts {
+    display: flex;
+  }
+  .blog-slider__wrp, .blog-slider {
+    width: 459px !important;
+  }
 }
-
-article section .about__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ffffff;
-  width: 50%;
+@media screen and (max-width: 569px) {
+  .start__apresentation {
+    width: 100% !important;
+  }
+  .start__apresentation h1 {
+    font-size: 38px !important;
+    line-height: 40px !important;
+  }
+  .imgDog {
+    max-width: 224px !important;
+    margin: auto;
+  }
+  .dogBanner {
+    height: 16rem !important;
+  }
+  .blog-slider__wrp, .blog-slider {
+    display: none !important;
+  }
 }
-
-article section .about__text h1 {
-  margin-top: 50px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 47px;
-}
-
-article section .about__text p {
-  margin-top: 40px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 31px;
-  text-align: justify;
-}
-
-article section .about__img {
-  width: 50%;
-  padding-top: 100px;
-}
-
-article section .about__img img {
-  position: relative;
-  bottom: 0px;
-  right: 0px;
-}
-
 #pets {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 40px 0px;
   text-align: center;
 }
 
 .pets_adopt {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-
 .pets_adopt img {
   width: 100%;
   height: 300px;
@@ -278,7 +200,6 @@ article section .about__img img {
   height: 300px;
   border-radius: 8px;
 }
-
 .pet__1 div {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -291,10 +212,9 @@ article section .about__img img {
   padding: 8px 0px;
   border-radius: 0px 0px 8px 8px;
 }
-
 .pet__1 div button {
   background-color: #1AADEC;
-  border: 0.5px solid #c9c9c9;
+  border: 0.5px solid rgb(201, 201, 201);
   border-radius: 8px;
   font-family: "Montserrat";
   font-size: 12px;
@@ -308,7 +228,6 @@ article section .about__img img {
   height: 300px;
   border-radius: 8px;
 }
-
 .pet__2 div {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -321,10 +240,9 @@ article section .about__img img {
   padding: 8px 0px;
   border-radius: 0px 0px 8px 8px;
 }
-
 .pet__2 div button {
   background-color: #1AADEC;
-  border: 0.5px solid #c9c9c9;
+  border: 0.5px solid rgb(201, 201, 201);
   border-radius: 8px;
   font-family: "Montserrat";
   font-size: 12px;
@@ -338,7 +256,6 @@ article section .about__img img {
   height: 300px;
   border-radius: 8px;
 }
-
 .pet__3 div {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -351,10 +268,9 @@ article section .about__img img {
   padding: 8px 0px;
   border-radius: 0px 0px 8px 8px;
 }
-
 .pet__3 div button {
   background-color: #1AADEC;
-  border: 0.5px solid #c9c9c9;
+  border: 0.5px solid rgb(201, 201, 201);
   border-radius: 8px;
   font-family: "Montserrat";
   font-size: 12px;
@@ -368,7 +284,6 @@ article section .about__img img {
   height: 300px;
   border-radius: 8px;
 }
-
 .pet__4 div {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -381,10 +296,9 @@ article section .about__img img {
   padding: 8px 0px;
   border-radius: 0px 0px 8px 8px;
 }
-
 .pet__4 div button {
   background-color: #1AADEC;
-  border: 0.5px solid #c9c9c9;
+  border: 0.5px solid rgb(201, 201, 201);
   border-radius: 8px;
   font-family: "Montserrat";
   font-size: 12px;
@@ -398,7 +312,6 @@ article section .about__img img {
   height: 300px;
   border-radius: 8px;
 }
-
 .pet__5 div {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -411,10 +324,9 @@ article section .about__img img {
   padding: 8px 0px;
   border-radius: 0px 0px 8px 8px;
 }
-
 .pet__5 div button {
   background-color: #1AADEC;
-  border: 0.5px solid #c9c9c9;
+  border: 0.5px solid rgb(201, 201, 201);
   border-radius: 8px;
   font-family: "Montserrat";
   font-size: 12px;
@@ -428,7 +340,6 @@ article section .about__img img {
   height: 300px;
   border-radius: 8px;
 }
-
 .pet__6 div {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -441,10 +352,9 @@ article section .about__img img {
   padding: 8px 0px;
   border-radius: 0px 0px 8px 8px;
 }
-
 .pet__6 div button {
   background-color: #1AADEC;
-  border: 0.5px solid #c9c9c9;
+  border: 0.5px solid rgb(201, 201, 201);
   border-radius: 8px;
   font-family: "Montserrat";
   font-size: 12px;
@@ -458,7 +368,6 @@ article section .about__img img {
   height: 300px;
   border-radius: 8px;
 }
-
 .pet__7 div {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -471,10 +380,9 @@ article section .about__img img {
   padding: 8px 0px;
   border-radius: 0px 0px 8px 8px;
 }
-
 .pet__7 div button {
   background-color: #1AADEC;
-  border: 0.5px solid #c9c9c9;
+  border: 0.5px solid rgb(201, 201, 201);
   border-radius: 8px;
   font-family: "Montserrat";
   font-size: 12px;
@@ -488,7 +396,6 @@ article section .about__img img {
   height: 300px;
   border-radius: 8px;
 }
-
 .pet__8 div {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -501,10 +408,9 @@ article section .about__img img {
   padding: 8px 0px;
   border-radius: 0px 0px 8px 8px;
 }
-
 .pet__8 div button {
   background-color: #1AADEC;
-  border: 0.5px solid #c9c9c9;
+  border: 0.5px solid rgb(201, 201, 201);
   border-radius: 8px;
   font-family: "Montserrat";
   font-size: 12px;
@@ -515,18 +421,11 @@ article section .about__img img {
 
 .btn_more {
   width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-top: 40px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   background: #1AADEC;
   border-radius: 20px;
   font-family: "DM Sans" sans-serif;
@@ -536,5 +435,4 @@ article section .about__img img {
   color: #ffffff;
   border: none;
   padding: 5px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

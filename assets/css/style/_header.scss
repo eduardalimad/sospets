@@ -91,3 +91,50 @@ header {
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 806px) {
+    nav ul {
+        display: none;
+    }
+    
+    .imgDog{
+        height: 16rem;
+    }
+    h1{
+        font-size: 37px!important;
+        line-height: 54px!important;
+    }
+    .buttons_starts{
+        display: flex;
+    }
+    .blog-slider__wrp, .blog-slider {
+        width: 459px!important;
+
+    }
+    
+}
+@media screen and (max-width: 569px) {
+    
+    .start__apresentation{
+        
+        width: 100%!important;
+        
+         h1 {
+            
+            font-size: 38px!important;
+            line-height: 40px!important;
+               
+        }
+    
+    }
+    .imgDog{
+        max-width: 224px !important;
+        margin: auto;
+    }
+    .dogBanner{
+        height: 16rem !important;
+    }
+    .blog-slider__wrp, .blog-slider{
+        display: none !important;
+    }
+}
